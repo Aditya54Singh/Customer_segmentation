@@ -5,7 +5,7 @@ from services.jwt_utils import create_token
 
 auth_bp = Blueprint("auht",__name__)
 
-@auth_bp.route("/register",methods=["POST"])
+@auth_bp.route("/register",methods=["POST", "OPTIONS"])
 def register():
     data = request.get_json()
 
@@ -38,7 +38,7 @@ def register():
     return jsonify({"token":token}), 201
 
 
-@auth_bp.route("/login", methods=["POST"])
+@auth_bp.route("/login", methods=["POST", "OPTIONS"])
 def login():
     data = request.get_json()
 
