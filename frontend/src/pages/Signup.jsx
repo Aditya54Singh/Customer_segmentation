@@ -11,24 +11,26 @@ function Signup() {
   const [loading, setLoading] = useState(false);
 
   const handleSignup = async (e) => {
-    e.preventDefault();
-    setError("");
-    setLoading(true);
+  e.preventDefault();
+  setError("");
+  setLoading(true);
 
-    try {
-      const res = await API.post("/signup", formData);
+  try {
+    const res = await API.post("/signup", {
+      email,
+      password
+    });
 
-      localStorage.setItem("token", res.data.token);
-
-      navigate("/home");
-    } catch (err) {
-      setError(
-        err.response?.data?.error || "Signup failed. Try again."
-      );
-    } finally {
-      setLoading(false);
-    }
-  };
+    localStorage.setItem("token", res.data.token);
+    navigate("/home");
+  } catch (err) {
+    setError(
+      err.response?.data?.error || "Signup failed. Try again."
+    );
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
