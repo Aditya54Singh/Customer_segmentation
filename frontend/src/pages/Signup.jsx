@@ -16,7 +16,7 @@ function Signup() {
   setLoading(true);
 
   try {
-    const res = await API.post("/signup", {
+    const res = await API.post("/register", {
       email,
       password
     });
