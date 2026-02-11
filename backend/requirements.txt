@@ -6,3 +6,4 @@ pandas
 scikit-learn
 joblib
 PyJWT
+mysql-connector-python
