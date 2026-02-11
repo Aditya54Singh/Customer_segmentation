@@ -7,6 +7,9 @@ auth_bp = Blueprint("auht",__name__)
 
 @auth_bp.route("/register",methods=["POST", "OPTIONS"])
 def register():
+    if request.method == "OPTIONS":
+        return "", 200
+
     data = request.get_json()
 
     email = data.get("email")
@@ -40,6 +43,10 @@ def register():
 
 @auth_bp.route("/login", methods=["POST", "OPTIONS"])
 def login():
+
+    if request.method == "OPTIONS":
+        return "", 200
+
     data = request.get_json()
 
     email = data.get("email")
