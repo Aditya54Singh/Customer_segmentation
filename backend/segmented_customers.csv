@@ -1,0 +1,13 @@
+Age,Income,Recency,NumWebVisitsMonth,Kidhome,Teenhome,MntWines,MntFruits,MntMeatProducts,MntFishProducts,MntSweetProducts,MntGoldProds,NumWebPurchases,NumStorePurchases,cluster_id,macro_segment,persona,confidence,recommended_action
+22,18000,60,10,0,0,20,5,30,5,5,10,1,1,1,Medium Value Customers,Occasional Value Seekers,0.84,Target with seasonal promotions and discounts.
+28,22000,45,9,1,0,35,10,40,10,8,15,1,1,1,Medium Value Customers,Occasional Value Seekers,0.87,Target with seasonal promotions and discounts.
+35,45000,20,6,1,1,200,30,220,50,30,80,4,3,1,Medium Value Customers,Occasional Value Seekers,0.86,Target with seasonal promotions and discounts.
+40,52000,18,5,0,1,260,40,300,70,40,100,5,4,1,Medium Value Customers,Occasional Value Seekers,0.83,Target with seasonal promotions and discounts.
+48,90000,50,8,0,0,150,20,180,30,15,60,2,1,1,Medium Value Customers,Occasional Value Seekers,0.82,Target with seasonal promotions and discounts.
+55,110000,55,9,0,0,180,25,200,35,20,70,2,2,0,High Value Customers,High-Value Loyalists,0.8,Reward with loyalty programs and premium offers.
+42,120000,2,2,1,1,900,120,1100,260,180,450,12,10,3,Low Value Customers,At-Risk Customers,0.81,Run reactivation and win-back campaigns.
+50,135000,1,1,0,0,1100,150,1400,300,220,600,14,12,3,Low Value Customers,At-Risk Customers,0.82,Run reactivation and win-back campaigns.
+26,38000,8,14,0,0,220,45,240,60,35,90,6,2,1,Medium Value Customers,Occasional Value Seekers,0.8,Target with seasonal promotions and discounts.
+29,42000,10,12,1,0,260,55,280,65,40,100,7,3,1,Medium Value Customers,Occasional Value Seekers,0.82,Target with seasonal promotions and discounts.
+45,65000,12,4,2,2,400,60,450,90,60,150,3,8,0,High Value Customers,High-Value Loyalists,0.79,Reward with loyalty programs and premium offers.
+52,72000,15,3,2,1,420,65,480,100,70,160,4,9,0,High Value Customers,High-Value Loyalists,0.82,Reward with loyalty programs and premium offers.
