@@ -7,20 +7,23 @@ from routes.bulk_predict import bulk_predict_bp
 
 def create_app():
     app = Flask(__name__)
-    CORS(app)
 
-    
+    CORS(
+        app,
+        resources={r"/*": {"origins": "*"}},
+        supports_credentials=True
+    )
+
     app.register_blueprint(predict_bp)
     app.register_blueprint(auth_bp)
     app.register_blueprint(history_bp)
     app.register_blueprint(bulk_predict_bp)
 
-    @app.route("/health",methods=["GET"])
+    @app.route("/health", methods=["GET"])
     def health():
-        return {"status":"Backedne is runnig" },200
-    
+        return {"status": "Backend is running"}, 200
+
     return app
 
-if __name__ == "__main__":
-    app=create_app()
-    app.run()
+
+app = create_app()  # <-- important for gunicorn
